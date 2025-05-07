@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scopri il mondo del makeup con Glamour Touch. Tutorial, prodotti e ispirazioni per il tuo look perfetto.">
+    <title>Glamour Touch - Il Tuo Universo Makeup</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Per icone -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Glamour<span>Touch</span></a>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="prodotti.html">Prodotti & Tutorial</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero-slider">
+        <div class="slide active" style="background-image: url('https://via.placeholder.com/1920x700/E91E63/FFFFFF?text=Look+Estivo+Radioso');">
+            <div class="hero-content container">
+                <h1>Esprimi la Tua Bellezza Unica</h1>
+                <p>Tutorial, consigli e i migliori prodotti per un makeup che parla di te.</p>
+                <a href="prodotti.html" class="btn btn-primary">Scopri le Novità</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://via.placeholder.com/1920x700/AD1457/FFFFFF?text=Nuova+Collezione+Labbra');">
+            <div class="hero-content container">
+                <h1>Collezione Labbra Intense</h1>
+                <p>Colori vibranti e a lunga tenuta per labbra protagoniste.</p>
+                <a href="prodotti.html#labbra" class="btn btn-primary">Vedi i Rossetti</a>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('https://via.placeholder.com/1920x700/C2185B/FFFFFF?text=Masterclass+Smokey+Eyes');">
+            <div class="hero-content container">
+                <h1>Masterclass Smokey Eyes</h1>
+                <p>Impara i segreti per uno sguardo magnetico e indimenticabile.</p>
+                <a href="prodotti.html#smokey" class="btn btn-primary">Guarda il Tutorial</a>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev" aria-label="Previous slide">&#10094;</button>
+            <button class="next" aria-label="Next slide">&#10095;</button>
+        </div>
+        <div class="slider-dots">
+            <!-- I puntini verranno generati da JS -->
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="about-us fade-in">
+            <h2>La Nostra Passione, Il Tuo Stile</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/400x300/F8BBD0/333?text=Team+Glamour+Touch" alt="Makeup artist al lavoro" class="responsive-img">
+                <p>Benvenuta su Glamour Touch, il tuo portale dedicato all'arte del makeup. Crediamo che ogni persona abbia una bellezza unica da valorizzare. Qui troverai ispirazione, guide passo-passo e una selezione esclusiva di prodotti per creare look impeccabili, da quelli naturali per tutti i giorni alle creazioni più audaci per le occasioni speciali. Unisciti alla nostra community!</p>
+            </div>
+        </section>
+
+        <section class="featured-looks fade-in">
+            <h2>Ispirazioni del Momento</h2>
+            <div class="looks-grid">
+                <div class="look-card">
+                    <img src="https://via.placeholder.com/350x250/FCE4EC/333?text=Look+Nude+Elegante" alt="Look Nude Elegante" class="responsive-img">
+                    <h3>Look Nude Sofisticato</h3>
+                    <p>Perfetto per ogni giorno, esalta la tua bellezza naturale con toni caldi e luminosi.</p>
+                    <a href="prodotti.html#nude" class="btn btn-secondary">Vedi Dettagli</a>
+                </div>
+                <div class="look-card">
+                    <img src="https://via.placeholder.com/350x250/F48FB1/333?text=Smokey+Eyes+Intenso" alt="Smokey Eyes Intenso" class="responsive-img">
+                    <h3>Smokey Eyes Intenso</h3>
+                    <p>Uno sguardo magnetico e profondo per le tue serate più glamour.</p>
+                    <a href="prodotti.html#smokey" class="btn btn-secondary">Guarda il Tutorial</a>
+                </div>
+                <div class="look-card">
+                    <img src="https://via.placeholder.com/350x250/F06292/333?text=Labbra+Rosse+Iconiche" alt="Labbra Rosse Iconiche" class="responsive-img">
+                    <h3>Labbra Rosse Iconiche</h3>
+                    <p>Il classico intramontabile che aggiunge un tocco di audacia e femminilità.</p>
+                    <a href="prodotti.html#labbra" class="btn btn-secondary">Scegli la Tonalità</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action fade-in">
+            <h2>Pronta a Brillare?</h2>
+            <p>Esplora la nostra collezione completa e trova i tuoi nuovi prodotti makeup preferiti.</p>
+            <a href="prodotti.html" class="btn btn-primary-outline">Vai allo Shop</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Glamour<span>Touch</span></div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <p>&copy; <span id="current-year"></span> Glamour Touch. Makeup Your World.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Torna su"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
