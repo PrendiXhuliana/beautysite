@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contatta il team di Glamour Touch per domande, collaborazioni o assistenza.">
+    <title>Contatti - Glamour Touch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Glamour<span>Touch</span></a>
+            </div>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="prodotti.html">Prodotti & Tutorial</a></li>
+                    <li><a href="contatti.html" class="active">Contatti</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container page-padding">
+        <section class="contact-header fade-in">
+            <h2>Parla con Noi</h2>
+            <p>Siamo qui per te! Per domande sui prodotti, consigli personalizzati o proposte di collaborazione, non esitare a scriverci.</p>
+        </section>
+
+        <section class="contact-content fade-in">
+            <div class="contact-form-container">
+                <h3>Inviaci un Messaggio</h3>
+                <form id="contactForm" class="contact-form" novalidate>
+                    <div>
+                        <label for="name">Il Tuo Nome:</label>
+                        <input type="text" id="name" name="name" required placeholder="Es. Maria Rossi">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+                    <div>
+                        <label for="email">La Tua Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Es. maria.rossi@email.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div>
+                        <label for="subject">Oggetto:</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Es. Informazioni Prodotto">
+                        <span class="error-message" id="subjectError"></span>
+                    </div>
+                    <div>
+                        <label for="message">Il Tuo Messaggio:</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Scrivi qui la tua richiesta..."></textarea>
+                        <span class="error-message" id="messageError"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia Ora</button>
+                    <div id="formSuccessMessage" class="success-message" style="display:none;">Messaggio inviato con successo! Ti risponderemo al più presto.</div>
+                </form>
+            </div>
+
+            <div class="contact-info-container">
+                <h3>Informazioni di Contatto</h3>
+                <div class="info-item">
+                    <h4><i class="fas fa-envelope" style="margin-right: 8px; color: var(--primary-color);"></i> Email Assistenza Clienti</h4>
+                    <p><a href="mailto:support@glamourtouch.it">support@glamourtouch.it</a></p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fas fa-handshake" style="margin-right: 8px; color: var(--primary-color);"></i> Collaborazioni & PR</h4>
+                    <p><a href="mailto:pr@glamourtouch.it">pr@glamourtouch.it</a></p>
+                </div>
+                <div class="info-item">
+                    <h4><i class="fas fa-share-alt" style="margin-right: 8px; color: var(--primary-color);"></i> Seguici sui Social</h4>
+                    <div class="social-icons-contact">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i> Pinterest</a>
+                    </div>
+                </div>
+                 <div class="info-item">
+                    <h4><i class="fas fa-map-marker-alt" style="margin-right: 8px; color: var(--primary-color);"></i> Sede Operativa</h4>
+                    <p>Via della Creatività, 10<br>20100 Milano (MI), Italia<br>(Non aperta al pubblico)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+             <div class="footer-content">
+                <div class="footer-logo">Glamour<span>Touch</span></div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <p>&copy; <span id="current-year"></span> Glamour Touch. Makeup Your World.</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTopBtn" title="Torna su"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
